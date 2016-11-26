@@ -145,7 +145,7 @@ func PoolSize(d int) Option {
 	}
 }
 
-// PoolSize sets the connection pool size
+// PoolSize sets the connection pool TTL
 func PoolTTL(d time.Duration) Option {
 	return func(o *Options) {
 		o.PoolTTL = d
